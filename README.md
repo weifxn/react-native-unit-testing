@@ -79,7 +79,7 @@ Example:
 
 ## 1. Creating a Test Suite
 
-Then, import `react` and `react-test-renderer` following with your first test suite
+Then, import `react` and describe your first test suite.
 
 ```js
 // demo.test.js
@@ -199,7 +199,7 @@ describe('My Test Suite', () => {
 
 ```
 
-> Instance are usually created in test suites so it can be used by all of the tests.
+> Instances are usually created in test suites so it can be used by all of the tests.
 
 For Redux, this will show an error because `travelReducer` props needs be handled.
 
@@ -330,7 +330,7 @@ describe('My Test Suite', () => {
   console.log(inst.state) // shows all states
   console.log(inst.onChangeValue('params')) // returns what the function should
 
-inst.setState({ data: 'newData' })
+  inst.setState({ data: 'newData' })
 
   it('should run test flawlessly', () => {
       expect(total).toBe(2)
